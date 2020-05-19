@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Times Tables on Grid </title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+<h1>Times Tables:  Tens</h1>
+<!-- This is just a header.  It doesn't need a grid. -->
+
+
+<ul>
+  <li><a class="active" href=https://www.resourceroom.net/20OER/"> Go Back: All the Times Tables</a></li>
+  <li><a class="active" https://resourceroom.net/20OER/FPTens.html"> Tens Introduction and Videos (pick some) ! ) </a></li>
+
+  </ul>
+<div class = "quizContainer">
+
+  <section class="twoColumns">
+      <div class="buttonHolder"> <button id="first5"  class="button1"   onclick="setToFirst5();">Facts 1-5</button>
+            <button id="startFact"  class="button1" disabled="true" onclick="startOver();">Start fact over</button> 
+            <!-- </div>
+            <div> -->
+            <button id="sixThru10"  class="button1"  onclick="setToHigh5();">Facts 6-10 </button>
+             <button id="all10"  class="button1"   onclick="setToAll10();">Facts 1-10</button>
+         </div>
+      <div class="scoreStuff">
+        <!-- this starts the class that goes in the second column?  -->
+        <div><p>SCORE: </p></div> 
+        <p id="score">0</p>   
+          <div id="scoreBarDiv">
+          <canvas id="scoreBar" width="300" height="50" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML5 canvas tag.</canvas> 
+          </div>
+<p> Lives Left: </p> 
+<!-- When I add divs here they *do* stay in the section. In "how many lives" it does an innerhtml equals.      -->
+<div id="howManyLives">
+  <!-- the javascript will write the lives in here.       -->
+</div>
+  </section>
+
+ 
+  <div id="multPic" class="mathImage"> 
+
+  </div>
+  <section class ="twoColCheck">
+    <div class="questionAndInput">
+  <div id="question"> Question  </div>
+<div id="userInput">         <input type="number" id="factor" placeholder="??" size="3" maxlength="2" autofocus  > 
+        </div>
+  </div>
+
+
+  
+   <div  class="checkAnswer"> 
+         <button id="check1"  class="button1" disabled="false" onclick="checkName()"">Check Answer  </button>
+    </div>
+
+  </section>
+  <section class="twoColCheck">
+  <div id="feedback">
+        
+    </div> 
+    <div> <button id="nextOne" disabled="true" ; class="button1"  onclick="newFact();">Next Fact</button></div>
+    </section>
+  </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

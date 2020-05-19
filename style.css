@@ -1,0 +1,124 @@
+div 
+{
+  min-height: 30px;
+  min-width: 30px;
+  /* border:#4ca450;
+  border-style: dotted; */
+}
+input
+{
+  font-size: 24px;
+}
+#startFact
+{
+  display: none;
+}
+#factor, #multAnswer, #multAnswer1
+    /* // these are the inputs   */
+    {
+      text-align: right;
+      border-radius: 12px;
+      height: 80px;
+      width:  80px; 
+      /* border: 2px solid rgb(36, 41, 36); */
+
+    }
+/* .quizContainer
+/* so, somehow, making *this* with columns
+{display: grid;
+    /* grid-template-columns: repeat(2, 1fr); */
+    /* grid-template-rows: repeat(5, 100px);}
+     */ 
+.twoColumns
+{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  background-color: aquamarine;
+}
+.twoColCheck
+{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+    font-size: 2em;
+    /* I*think* this will be the right size in real life.   also these are the columns for the outer div.  */
+    text-align: center;
+}
+.mathImage
+{
+  display:grid;
+  grid-template-columns: repeat(5,1fr);
+  /* if I don't tell it the columns then it shoudl adapt so I could go further than 10 groups.  */
+  text-align:center;
+  background-color:palevioletred; 
+  
+  min-width: 100px;
+}
+
+
+/* 
+From the Old One */
+.button1 
+{font-size: 15px;
+  border-radius: 12px;
+  background-color: #4CA450;   
+  display:block;
+   
+  padding: 5px;
+  min-width:70px;
+  min-height: 50px;
+  margin: 15px; 
+
+}
+body {
+  margin:  auto;
+  color: #323232;
+  max-width: 100%;
+  line-height: 1.6;
+  padding: 1em 3em;
+  background-color: #fff;
+  font-family: 'Roboto', serif;
+}
+ section > div,  #multPic >div
+{
+  background-color: powderblue;
+   border: 2px solid black;  
+   border-radius: 12px;
+   margin: 2px;
+}
+.question
+{
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 20px;
+  
+}
+ul {
+  list-style-type: none;
+  
+  color: black;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+  border: 2px solid black;
+  border-radius: 17px;
+  
+  background-color: rgb(196, 183, 110);
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #555;
+  color: white;
